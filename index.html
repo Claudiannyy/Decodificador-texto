@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets\chat_217870.png" type="image/png">
+    <title>Decodificador</title>
+</head>
+<body>
+    <main>
+        <section class="parte-esquerda">
+           <div class="area-mensagem"> 
+            <div>
+            <textarea class="inserir-mensagem" placeholder="Digite aqui..." ></textarea>
+        </div>
+          <div class="alerta">
+            <ion-icon name="information-circle-outline"></ion-icon>
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
+        </div>
+           <div class="botoes">
+              <button onclick="criptografar ()">Criptografar</button>
+              <button onclick="descriptografar ()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="parte-direita"> 
+          <p class="resultado escondido"><p>
+          <div class="conteudo-direita">
+            <img class="robo-lupa"src="assets\bot-lupa.png" alt="robo-lupa-pulando">
+            <div class="mensagem-direita">
+            <h1 class="aviso">Nenhuma mensagem encontrada</h1>
+            <p class="informacao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+          </div>
+            <div class="botoes">
+             <button class="botao-copiar escondido"onclick="Copiar()">Copiar</button>
+            </div> 
+        </section>
+    </main>
+    <footer>
+      <a href="https://github.com/Claudiannyy"><img src="assets\github.png" class="logo-github"alt="Logo Github"></a>
+      <p>Desenvolvido por Claudianny</p>
+    </footer>
+</body>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="app.js"></script>
+</html>

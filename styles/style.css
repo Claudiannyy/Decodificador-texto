@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+body{
+    background-color: #144f83;
+}
+main{
+    display:flex;
+    gap:30px;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    padding:40px;
+}
+.parte-esquerda{
+    background-color: #F2F2F2;
+    width: 600px;
+    height: 600px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.area-mensagem{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+textarea {
+    resize: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color:rgb(7, 7, 78);
+    font-size: 22px;
+    width: 100%;
+    height: 430px;
+}
+ion-icon{
+    font-size: 18px;
+    color: #2f3a3e;
+}
+.alerta{
+    font-family: "Merriweather", serif;
+    font-size: 12px;
+    color: #2f3a3eb0;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.parte-direita{
+    background-color: #F2F2F2;
+    width: 600px;
+    height: 600px;
+    border-radius: 32px;
+    display: flex;
+    position: relative;
+    word-break: break-all;
+}
+.resultado{
+    padding:20px;
+    justify-content: flex-start;
+    color:rgb(7, 7, 78);
+    font-size: 22px;
+}
+.conteudo-direita{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.robo-lupa{
+   width: 200px;
+   height: 200px;
+   animation: robo-lupa-pular 0.8s ease infinite alternate;
+}
+@keyframes robo-lupa-pular{
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px); 
+    }
+}
+.aviso{   
+    font-family: "Merriweather", serif;
+    font-weight: bold ;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #034C8C;
+}
+.informacao{
+    font-size:12px;
+    text-align: center;
+    color:#048ABF;
+}
+.botoes{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    bottom: 40px;
+    width: 100%;
+}
+button{
+    color:#fafafa;
+    background-color: #035AA6;
+    font-size: 16px;
+    width:200px;
+    border-radius: 20px;
+    border-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#3181beae;
+}
+footer{
+    color:#fafafa;
+    font-family:"Moderustic", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.logo-github{
+    width:22px;
+    height: 22px;
+}
+.escondido{
+    display:none;
+}
+@media (max-width:1236px) {
+   main{
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+   }  
+}
+@media (max-width:620px){
+    .robo-lupa{
+        display: none;
+    }
+}
